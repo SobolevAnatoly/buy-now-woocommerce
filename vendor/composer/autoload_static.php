@@ -33,8 +33,14 @@ class ComposerStaticInit9212e9bcc2941b5dd7cca1f7b7d20a4d
         'Premmerce\\SDK\\V2\\Notifications\\AdminNotifier' => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src/V2/Notifications/AdminNotifier.php',
         'Premmerce\\SDK\\V2\\Plugin\\PluginInterface' => __DIR__ . '/..' . '/premmerce/wordpress-sdk/src/V2/Plugin/PluginInterface.php',
         'Testcorp\\BuyNow\\Admin\\Admin' => __DIR__ . '/../..' . '/src/Admin/Admin.php',
+        'Testcorp\\BuyNow\\Admin\\BuyNowOrdersPage' => __DIR__ . '/../..' . '/src/Admin/BuyNowOrdersPage.php',
+        'Testcorp\\BuyNow\\Admin\\OrdersListTable' => __DIR__ . '/../..' . '/src/Admin/OrdersListTable.php',
         'Testcorp\\BuyNow\\BuyNowPlugin' => __DIR__ . '/../..' . '/src/BuyNowPlugin.php',
+        'Testcorp\\BuyNow\\Frontend\\AjaxHandlers' => __DIR__ . '/../..' . '/src/Frontend/AjaxHandlers.php',
+        'Testcorp\\BuyNow\\Frontend\\BuyNowHelpers' => __DIR__ . '/../..' . '/src/Frontend/BuyNowHelpers.php',
+        'Testcorp\\BuyNow\\Frontend\\EnqueueScripts' => __DIR__ . '/../..' . '/src/Frontend/EnqueueScripts.php',
         'Testcorp\\BuyNow\\Frontend\\Frontend' => __DIR__ . '/../..' . '/src/Frontend/Frontend.php',
+        'Testcorp\\BuyNow\\Models\\CreateOrder' => __DIR__ . '/../..' . '/src/Models/CreateOrder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

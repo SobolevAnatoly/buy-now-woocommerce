@@ -10,6 +10,12 @@ return array(
     'Premmerce\\SDK\\V2\\Notifications\\AdminNotifier' => $vendorDir . '/premmerce/wordpress-sdk/src/V2/Notifications/AdminNotifier.php',
     'Premmerce\\SDK\\V2\\Plugin\\PluginInterface' => $vendorDir . '/premmerce/wordpress-sdk/src/V2/Plugin/PluginInterface.php',
     'Testcorp\\BuyNow\\Admin\\Admin' => $baseDir . '/src/Admin/Admin.php',
+    'Testcorp\\BuyNow\\Admin\\BuyNowOrdersPage' => $baseDir . '/src/Admin/BuyNowOrdersPage.php',
+    'Testcorp\\BuyNow\\Admin\\OrdersListTable' => $baseDir . '/src/Admin/OrdersListTable.php',
     'Testcorp\\BuyNow\\BuyNowPlugin' => $baseDir . '/src/BuyNowPlugin.php',
+    'Testcorp\\BuyNow\\Frontend\\AjaxHandlers' => $baseDir . '/src/Frontend/AjaxHandlers.php',
+    'Testcorp\\BuyNow\\Frontend\\BuyNowHelpers' => $baseDir . '/src/Frontend/BuyNowHelpers.php',
+    'Testcorp\\BuyNow\\Frontend\\EnqueueScripts' => $baseDir . '/src/Frontend/EnqueueScripts.php',
     'Testcorp\\BuyNow\\Frontend\\Frontend' => $baseDir . '/src/Frontend/Frontend.php',
+    'Testcorp\\BuyNow\\Models\\CreateOrder' => $baseDir . '/src/Models/CreateOrder.php',
 );

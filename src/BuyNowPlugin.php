@@ -3,6 +3,9 @@
 use Premmerce\SDK\V2\FileManager\FileManager;
 use Testcorp\BuyNow\Admin\Admin;
 use Testcorp\BuyNow\Frontend\Frontend;
+use Testcorp\BuyNow\Frontend\AjaxHandlers;
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 /**
  * Class BuyNowPlugin
@@ -10,6 +13,8 @@ use Testcorp\BuyNow\Frontend\Frontend;
  * @package Testcorp\BuyNow
  */
 class BuyNowPlugin {
+
+    const DOMAIN = 'buy-now-woocommerce';
 
 	/**
 	 * @var FileManager
@@ -25,6 +30,8 @@ class BuyNowPlugin {
         $this->fileManager = new FileManager($mainFile);
 
         add_action('plugins_loaded', [ $this, 'loadTextDomain' ]);
+
+        new AjaxHandlers();
 
 	}
 
@@ -49,24 +56,4 @@ class BuyNowPlugin {
         load_plugin_textdomain('buy-now-woocommerce', false, $name . '/languages/');
     }
 
-	/**
-	 * Fired when the plugin is activated
-	 */
-	public function activate() {
-		// TODO: Implement activate() method.
-	}
-
-	/**
-	 * Fired when the plugin is deactivated
-	 */
-	public function deactivate() {
-		// TODO: Implement deactivate() method.
-	}
-
-	/**
-	 * Fired during plugin uninstall
-	 */
-	public static function uninstall() {
-		// TODO: Implement uninstall() method.
-	}
 }
