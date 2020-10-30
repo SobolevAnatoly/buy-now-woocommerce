@@ -1,5 +1,5 @@
 # Plugin: Buy Now for WooCommerce
-### Version 1.0.0
+### Version 1.0.0 very first beta
 
 ## CMS: [WordPress]
 ## eCommerce Platform: [WooCommerce]
@@ -39,6 +39,7 @@ Activate the plugin.
 - [X] Software architecture creation
 - [X] Coding
 - [X] Testing
+- [ ] Refactoring
 
 License
 ----
